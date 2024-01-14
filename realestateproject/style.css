@@ -1,0 +1,310 @@
+*{ 
+	box-sizing: border-box;
+    	margin: 0;
+}
+body {
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, sans-serif;
+	background-color: #353535;
+}
+.container{
+	display:block;
+}
+h2,h3{
+	text-align:center;
+}
+.container li{
+	margin:10px;
+	padding-right:40px;
+}
+.container img{
+	display:none;
+}
+.container ul{
+	text-align:center;
+	list-style-type:none;
+}
+
+
+header h1{
+font-family: Verdana, Geneva, Tahoma, sans-serif; 
+letter-spacing: 0.1em;
+font-weight:bold;
+
+}
+.sitemap{
+	color:#000000;
+}
+.sitemap li{
+	padding-bottom:1em;
+}
+
+.block{
+	display:inline-block;
+}
+
+#wrapper {
+	background:linear-gradient(white,#4040bf);
+}
+header {
+	color: white;
+	background-color: #4040bf;
+	background-image: url(img/sidemen-merch-sticker.jpg);
+	background-repeat: no-repeat;
+	background-size: auto 100%;
+	padding: .5em 0 .5em 6.5em;
+}
+textarea{
+	width:100%;
+}
+
+main {   
+	background-color: #FFFFFF;
+      color: #000000;
+	padding: 1em; 
+}
+aside { 
+	text-align: center; 
+	color:#FFFFFF;
+}
+aside a{
+	color:#FFFFFF;
+}
+footer {
+	color: #FFFFFF;
+	background-color: #4040bf;
+	font-size: 60%;
+	text-align: center;
+	padding: 0.5em 0;
+}
+
+fieldset {
+	margin-top:3%;
+}
+
+img { 
+	padding: 1em; 
+}
+h2 {
+	color: #000066;
+	margin-bottom:20px;
+}
+.floatRight{
+	float:right;
+	margin-left:6px;	
+}
+.listing-image {
+	width:100%;
+	height:auto;
+}
+
+/* Styles to configure navigation links as horizontal areas */
+nav ul { 
+	list-style-type: none;
+      padding-left: 0; 
+	border-top: 1px solid #EEEEEE;
+}
+nav li { 
+	border-bottom: 1px solid #EEEEEE;  
+      text-align: center;
+	padding-top: .5em;
+	padding-bottom: .5em;
+}
+nav a { 
+	text-decoration: none;
+	
+		font-weight: bold;
+		color:#000066;
+}
+
+
+nav a:visited {
+	color:#000000;
+}
+
+nav a:hover {
+	color: #0111a2;
+}
+
+.form-row
+{
+	display:block;
+	margin-top:1em;
+}
+.inline{ 
+	display:inline;
+}
+
+p {
+	margin-bottom:1em;
+}
+
+table {
+	margin:1em 0em;
+}
+
+td {
+	padding-right:0.5em;
+}
+
+th {
+	text-align:left;
+}
+
+tr:nth-child(odd) {
+	background-color: #dddddd;
+}
+
+
+/* Medium Display */
+@media (min-width: 600px) {
+#wrapper { 
+	width:auto;
+ 	display: grid; 
+	grid-template-columns: 55% auto;
+	grid-template-rows: auto auto auto auto;
+}
+h2,h3{
+	text-align:start;
+}
+.container ul{
+	text-align:start;
+	list-style-type:square;
+}
+.container li{
+	margin:10px;
+}
+.container img{
+	display:block;
+}
+.container{
+	display:block;
+}
+
+header { 
+	grid-row: 1 / 2; grid-column: 1 / 3;
+	padding-left:5.5em;
+	}
+nav    { 
+	grid-row: 2 / 3; grid-column: 1 / 3; }
+main   { 
+	grid-row: 3 / 4; grid-column: 1 / 2; }
+aside  { 
+	grid-row: 3 / 4; grid-column: 2 / 3; }
+footer {
+ 	grid-row: 4 / 5; grid-column: 1 / 3; }
+nav ul { 
+	display: flex; 
+	flex-direction: row; 
+	flex-wrap: nowrap; 
+	justify-content: space-around; }
+nav ul li { 
+	border-bottom: none; } 
+	aside{
+		color:#000000;
+	
+	}
+	aside a{
+		color:#000000;
+	}
+
+
+ 							 }
+
+/* General Laptop Display/ Large Display  */
+@media (min-width: 1024px) {
+body     { 
+	background-color: #f1f1f1; 
+}
+nav ul { 
+	display: flex; 
+	flex-direction: column; 
+	flex-wrap: nowrap; 
+	 
+}
+h2,h3{
+	text-align:start;
+}
+.container ul{
+	text-align:start;
+	list-style-type:square;
+}
+.container{
+	display:flex;
+}
+.container li{
+	margin:10px;
+}
+.container img{
+	display:flex;
+}
+nav li {
+	padding-bottom: 15px;
+}
+nav a{
+	font-size:1.2em;
+	
+}
+nav ul li{
+	border-bottom: solid 0.5px lightgray;
+}
+
+#wrapper { 
+	width: auto; 
+    margin: auto; 
+    max-width: 1280px; 
+    display: grid; 
+	grid-template-columns: 150px auto auto;
+	grid-template-rows: auto auto auto ; 
+}
+header { 
+	grid-row: 1 / 2; 
+	grid-column: 1 / 4;
+	padding-left:5.5em; 
+}
+nav    { 
+	grid-row: 2 / 3; 
+	grid-column: 1 / 2; 
+}
+main   { 
+	grid-row: 2 / 3; 
+	grid-column: 2 / 3; 
+}
+
+aside  { 
+grid-row: 2 / 3; 
+grid-column: 3 / 4; 
+}
+
+footer { 
+	grid-row: 3 / 4; 
+	grid-column: 1 / 4; 
+}
+aside{
+	color:#000000;
+
+}
+aside a{
+	color:#000000;
+}
+.galleryimage {
+	float:right;
+	padding:1em;
+}
+header h1{
+	padding-left: 60px;
+}
+
+					} 
+	 
+
+.floatRight {
+	float: right;
+}
+	 
+
+.clearBoth {
+	clear: both;
+	margin-top:1em;
+	margin-bottom:2em;
+}
+	 
